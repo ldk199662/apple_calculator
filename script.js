@@ -97,28 +97,6 @@ function clearVar(symbol = "") {
   })
   
 
-  function clickButtonEl(key) {
-    numbersE.forEach(bt => {
-        if(bt.innerText === key) {
-            bt.click();
-        }
-    })
-  };
-  
-
-  function clickOperation(key) {
-    operationE.forEach(bt => {
-        if(bt.innerText === key) {
-            bt.click();
-        }
-    })
-  };
-  
-  function ClickEqual() {
-    equalE.click();
-  };
-
-
 
 
   // 키보드로도 계산 가능
@@ -155,3 +133,24 @@ function clearVar(symbol = "") {
         ClickEqual();
     }
   });
+
+  function clickButtonEl(key) {
+    numbersE.forEach(bt => {
+        if(bt.innerText === key) {
+            bt.click();
+        }
+    })
+  };
+  
+
+  function clickOperation(key) {
+    operationE.forEach(bt => {
+        if(bt.innerText === key) {
+            bt.click();
+        }
+    })
+  };
+  
+  function ClickEqual() {
+    equalE.click();
+  };
